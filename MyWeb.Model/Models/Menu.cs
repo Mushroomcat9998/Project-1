@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace MyWeb.Model
 {
     [Table("Menus")]
-    class Menu
+    public class Menu
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]

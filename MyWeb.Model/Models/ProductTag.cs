@@ -5,7 +5,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace MyWeb.Model.Models
 {
     [Table("ProductTags")]
-    class ProductTag
+    public class ProductTag
     {
         [Key]
         public int ProductID { get; set; }

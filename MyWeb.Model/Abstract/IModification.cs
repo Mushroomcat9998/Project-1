@@ -2,7 +2,7 @@
 
 namespace MyWeb.Model.Abstract
 {
-    interface IModification
+    public interface IModification
     {
         DateTime? CreatedDate { get; set; }
         string CreatedBy { get; set; }

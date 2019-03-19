@@ -5,7 +5,7 @@ using MyWeb.Model.Abstract;
 namespace MyWeb.Model.Models
 {
     [Table("Pages")]
-    class Page : Modification
+    public class Page : Modification
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]

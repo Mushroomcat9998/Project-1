@@ -5,7 +5,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace MyWeb.Model.Models
 {
     [Table("VisitorStatistics")]
-    class VisitorStatistic
+    public class VisitorStatistic
     {
         [Key]
         public Guid ID { get; set; }

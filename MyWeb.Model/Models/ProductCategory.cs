@@ -6,7 +6,7 @@ using MyWeb.Model.Abstract;
 namespace MyWeb.Model
 {
     [Table("ProductCategories")]
-    class ProductCategory : Modification
+    public class ProductCategory : Modification
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]

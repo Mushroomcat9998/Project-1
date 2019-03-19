@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace MyWeb.Model.Models
 {
     [Table("Tags")]
-    class Tag
+    public class Tag
     {
         [Key]
         [MaxLength(50)]

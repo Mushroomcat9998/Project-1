@@ -7,7 +7,7 @@ using MyWeb.Model.Abstract;
 namespace MyWeb.Model.Models
 {
     [Table("PostCategories")]
-    class PostCategory : Modification
+    public class PostCategory : Modification
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]

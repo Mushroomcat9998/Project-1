@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace MyWeb.Model.Models
 {
     [Table("OrderDetails")]
-    class OrderDetail
+    public class OrderDetail
     {
         [Key]
         public int ID { get; set; }

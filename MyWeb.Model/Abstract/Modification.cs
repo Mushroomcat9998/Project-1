@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace MyWeb.Model.Abstract
 {
-    abstract class Modification: IModification
+    public abstract class Modification: IModification
     {
         public DateTime? CreatedDate { get; set; }
 

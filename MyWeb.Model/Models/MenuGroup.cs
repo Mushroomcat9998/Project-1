@@ -5,7 +5,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace MyWeb.Model
 {
     [Table("MenuGroups")]
-    class MenuGroup
+    public class MenuGroup
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]

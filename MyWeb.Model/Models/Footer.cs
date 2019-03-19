@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace MyWeb.Model
 {
     [Table("Footers")]
-    class Footer
+    public class Footer
     {
         [Key]
         [MaxLength(50)]

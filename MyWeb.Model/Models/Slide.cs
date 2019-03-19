@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace MyWeb.Model.Models
 {
     [Table("Slides")]
-    class Slide
+    public class Slide
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]

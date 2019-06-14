@@ -110,7 +110,43 @@
         {
             if (context.Footers.Count(x => x.ID == CommonConstants.DefaultFooterId) == 0)
             {
-                string content = "Footer";
+                string content = @"<div class=""footer-bottom-cate"">
+					<h6>CATEGORIES</h6>
+					<ul>
+						<li><a href = ""#"" ></ a ></ li >
+
+                        <li><a href = ""#"" >Điện lạnh</a></li>
+						<li><a href = ""#"" > Viễn thông</a></li>
+						<li><a href = ""#"" > Đồ gia dụng</a></li>
+						<li><a href = ""#"" > Mỹ phẩm</a></li>
+						<li><a href = ""#"" > Thời trang</a></li>
+					</ul>
+				</div>
+				<div class=""footer-bottom-cate"">
+					<h6>TOP BRANDS</h6>
+					<ul>
+						<li><a href = ""#"" > Toshiba </ a ></ li >
+                        <li>< a href= ""#"" > Shiseido </ a ></ li >
+                        <li>< a href= ""#"" > Botani </ a ></ li >
+                        <li>< a href= ""#"" > Adidas </ a ></ li >
+                        <li>< a href= ""#"" > FPTShop </ a ></ li >
+                        <li>< a href= ""#"" > VNPT </ a ></ li >
+                        <li>< a href= ""#"" > Bitis </ a ></ li >
+                        <li>< a href= ""#"" > Panasonic </ a ></ li >
+                        <li>< a href= ""#"" > Samsung </ a ></ li >
+                        <li>< a href= ""#"" > LG </ a ></ li >
+                    </ ul >
+                </ div >
+                < div class=""footer-bottom-cate cate-bottom"">
+					<h6>ĐỊA CHỈ</h6>
+					<ul>
+						<li>Cửa hàng: Số 17, Đ.Giải Phóng, Q.Hai Bà Trưng, TP.Hà Nội</li>
+						<li>Văn Phòng: 18, ngõ 51, Đ.Tương Mai, Q.Hoàng Mai, TP.Hà Nội</li>
+						<li class=""phone"">SĐT : 0987636280</li>
+						<li class=""temp""><p>© 2019 DAVShop.Liên hệ số điện thoại của chúng tôi để được hỗ trợ tốt nhất.</p></li>
+					</ul>
+				</div>
+				<div class=""clearfix""> </div>";
                 context.Footers.Add(new Footer()
                 {
                     ID = CommonConstants.DefaultFooterId,

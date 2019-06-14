@@ -22,9 +22,6 @@ namespace TeduShop.Web
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
-
-           // Get an instance of servie
-           // IFeedbackService service = ServiceFactory.Get<IFeedbackService>();
         }
     }
 }

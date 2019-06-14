@@ -63,7 +63,7 @@ namespace TeduShop.Web.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult> Login(LoginViewModel model,string returnUrl)
+        public async Task<ActionResult> Login(LoginViewModel model, string returnUrl)
         {
             if (ModelState.IsValid)
             {
@@ -82,7 +82,7 @@ namespace TeduShop.Web.Controllers
                     }
                     else
                     {
-                        return RedirectToAction("Index","Home");
+                        return RedirectToAction("Index", "Home");
                     }
                 }
                 else
@@ -224,7 +224,7 @@ namespace TeduShop.Web.Controllers
         {
             IAuthenticationManager authenticationManager = HttpContext.GetOwinContext().Authentication;
             authenticationManager.SignOut();
-            return RedirectToAction("Index","Home");
+            return RedirectToAction("Index", "Home");
         }
 
         #region Helpers

@@ -11,7 +11,6 @@ using TeduShop.Model.Models;
 using TeduShop.Service;
 using TeduShop.Web.App_Start;
 using TeduShop.Web.Infrastructure.Extensions;
-
 using TeduShop.Web.Infrastructure.NganLuongAPI;
 using TeduShop.Web.Models;
 
@@ -115,8 +114,6 @@ namespace TeduShop.Web.Controllers
                     info.Merchant_password = merchantPassword;
                     info.Receiver_email = merchantEmail;
 
-
-
                     info.cur_code = "vnd";
                     info.bank_code = order.BankCode;
 
@@ -124,7 +121,7 @@ namespace TeduShop.Web.Controllers
                     info.Total_amount = orderDetails.Sum(x => x.Quantity * x.Price).ToString();
                     info.fee_shipping = "0";
                     info.Discount_amount = "0";
-                    info.order_description = "Thanh toán đơn hàng tại TeduShop";
+                    info.order_description = "Thanh toán đơn hàng tại DAVShop";
                     info.return_url = currentLink + "xac-nhan-don-hang.html";
                     info.cancel_url = currentLink + "huy-don-hang.html";
 

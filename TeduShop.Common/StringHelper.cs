@@ -45,8 +45,7 @@ namespace TeduShop.Common
         {
             if (replacements.Count > 0)
             {
-                template = replacements.Keys
-                            .Aggregate(template, (current, key) => current.Replace(key, replacements[key]));
+                template = replacements.Keys.Aggregate(template, (current, key) => current.Replace(key, replacements[key]));
             }
             return template;
         }

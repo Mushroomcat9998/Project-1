@@ -55,24 +55,18 @@ namespace TeduShop.Web.Controllers
             return View(homeViewModel);
         }
 
-
-        [ChildActionOnly]
-        [OutputCache(Duration = 3600)]
-        public ActionResult Footer()
-        {
-            var footerModel = _commonService.GetFooter();
-            var footerViewModel = Mapper.Map<Footer, FooterViewModel>(footerModel);
-            return PartialView(footerViewModel);
-        }
-
         [ChildActionOnly]
         public ActionResult Header()
         {
             return PartialView();
         }
 
+        public ActionResult Footer()
+        {
+            return PartialView();
+        }
+
         [ChildActionOnly]
-        //[OutputCache(Duration = 3600)]
         public ActionResult Category()
         {
             var model = _productCategoryService.GetAll();

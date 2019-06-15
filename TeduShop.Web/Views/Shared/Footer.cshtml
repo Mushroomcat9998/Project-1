@@ -1,32 +1,69 @@
-﻿@model TeduShop.Web.Models.FooterViewModel
-<div class="footer">
-  <div class="footer-top">
-    <div class="container">
-      <div class="latter">
-        <h6>Đăng ký nhận thư</h6>
-        <div class="sub-left-right">
-          <form>
-            <input type="text" placeholder="Nhập email tại đây" />
-            <input type="submit" value="Gửi" />
-          </form>
+﻿<div class="footer">
+    <div class="footer-top">
+        <div class="container">
+            <div class="latter">
+                <h6>Đăng ký nhận thư</h6>
+                <div class="sub-left-right">
+                    <form>
+                        <input type="text" placeholder="Nhập email tại đây" />
+                        <input type="submit" value="Gửi" />
+                    </form>
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+            <div class="latter-right">
+                <p>Theo dõi:</p>
+                <ul class="face-in-to">
+                    <li><a href="#"><span> </span></a></li>
+                    <li><a href="#"><span class="facebook-in"> </span></a></li>
+                    <div class="clearfix"> </div>
+                </ul>
+                <div class="clearfix"> </div>
+            </div>
+            <div class="clearfix"> </div>
         </div>
-        <div class="clearfix"> </div>
-      </div>
-      <div class="latter-right">
-        <p>Theo dõi:</p>
-        <ul class="face-in-to">
-          <li><a href="#"><span> </span></a></li>
-          <li><a href="#"><span class="facebook-in"> </span></a></li>
-          <div class="clearfix"> </div>
-        </ul>
-        <div class="clearfix"> </div>
-      </div>
-      <div class="clearfix"> </div>
     </div>
-  </div>
-  <div class="footer-bottom">
-    <div class="container">
-      @Html.Raw(Model.Content)
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="footer-bottom-cate">
+                <h6>DAVSHOP - WEBSITE BÁN </h6>
+                <h6>HÀNG ONLINE!</h6>
+                <ul>
+                    <li>
+                        <p>Mua hàng trực tuyến ngay tại<br> đây. Chúng tôi có tất cả !</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-bottom-cate">
+                <h6>DANH MỤC</h6>
+                <ul>
+                    <li><p class="size">Điện lạnh</p></li>
+                    <li><p class="size">Viễn thông</p></li>
+                    <li><p class="size">Đồ gia dụng</p></li>
+                    <li><p class="size">Mỹ phẩm</p></li>
+                    <li><p class="size">Thời trang</p></li>
+                </ul>
+            </div>
+            <div class="footer-bottom-cate">
+                <h6>THƯƠNG HIỆU MỚI</h6>
+                <ul>
+                    <li><p class="size">Toshiba</p></li>
+                    <li><p class="size">Shiseido</p></li>
+                    <li><p class="size">Botani</p></li>
+                    <li><p class="size">Adidas</p></li>
+                    <li><p class="size">FPTShop</p></li>
+                </ul>
+            </div>
+            <div class="footer-bottom-cate cate-bottom">
+                <h6>ĐỊA CHỈ</h6>
+                <ul>
+                    <li>Cửa hàng: Số 17, Đ. Giải Phóng, Q. Hai Bà Trưng, TP. Hà Nội</li>
+                    <li>Văn Phòng: 18, ngõ 51, Đ. Tương Mai, Q. Hoàng Mai, TP. Hà Nội</li>
+                    <li class="phone">SĐT : 0987636280</li>
+                    <li class="temp"><p>© @DateTime.Now.Year DAVShop. Liên hệ số điện thoại của chúng tôi để được hỗ trợ tốt nhất.</p></li>
+                </ul>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
     </div>
-  </div>
 </div>

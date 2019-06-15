@@ -107,7 +107,6 @@ namespace TeduShop.Web.Controllers
                 }
                 else
                 {
-                  
                     var currentLink = ConfigHelper.GetByKey("CurrentLink");
                     RequestInfo info = new RequestInfo();
                     info.Merchant_id = merchantId;
@@ -147,7 +146,6 @@ namespace TeduShop.Web.Controllers
                             message = result.Description
                         });
                 }
-
             }
             else
             {

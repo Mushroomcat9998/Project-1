@@ -2,7 +2,6 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Web;
 using System.Web.Mvc;
 using System.Web.Script.Serialization;
 using TeduShop.Common;
@@ -87,7 +86,7 @@ namespace TeduShop.Web.Controllers
             var productViewModel = Mapper.Map<IEnumerable<Product>, IEnumerable<ProductViewModel>>(productModel);
             int totalPage = (int)Math.Ceiling((double)totalRow / pageSize);
 
-            ViewBag.Tag = Mapper.Map<Tag,TagViewModel>(_productService.GetTag(tagId));
+            ViewBag.Tag = Mapper.Map<Tag, TagViewModel>(_productService.GetTag(tagId));
             var paginationSet = new PaginationSet<ProductViewModel>()
             {
                 Items = productViewModel,

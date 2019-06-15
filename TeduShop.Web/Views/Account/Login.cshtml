@@ -21,10 +21,7 @@
               @Html.CheckBoxFor(model => model.RememberMe)
               Nhớ mật khẩu?
             </div>
-            <a class="forgot" href="#">Forgot Your Password?</a>
             <input type="submit" value="Login">
-
-
     }
 
     @Html.Partial("_ExternalLoginsListPartial", new TeduShop.Web.Models.ExternalLoginListViewModel { ReturnUrl = ViewBag.ReturnUrl })

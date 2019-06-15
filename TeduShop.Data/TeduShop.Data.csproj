@@ -132,6 +132,10 @@
     <Compile Include="Migrations\201606140015263_RevenuesStatisticSP.Designer.cs">
       <DependentUpon>201606140015263_RevenuesStatisticSP.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201906151157302_DeleteFooters.cs" />
+    <Compile Include="Migrations\201906151157302_DeleteFooters.Designer.cs">
+      <DependentUpon>201906151157302_DeleteFooters.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\ApplicationGroupRepository.cs" />
@@ -141,7 +145,6 @@
     <Compile Include="Repositories\ContactDetailRepository.cs" />
     <Compile Include="Repositories\ErrorRepository.cs" />
     <Compile Include="Repositories\FeedbackRepository.cs" />
-    <Compile Include="Repositories\FooterRepository.cs" />
     <Compile Include="Repositories\MenuGroupRepository.cs" />
     <Compile Include="Repositories\MenuRepository.cs" />
     <Compile Include="Repositories\OrderDetailRepository.cs" />
@@ -222,6 +225,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201606140015263_RevenuesStatisticSP.resx">
       <DependentUpon>201606140015263_RevenuesStatisticSP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201906151157302_DeleteFooters.resx">
+      <DependentUpon>201906151157302_DeleteFooters.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

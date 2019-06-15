@@ -36,7 +36,7 @@ namespace TeduShop.Common
                 };
 
                 mail.To.Add(new MailAddress(toEmail));
-                mail.BodyEncoding = System.Text.Encoding.UTF8;
+                mail.BodyEncoding = Encoding.UTF8;
                 mail.IsBodyHtml = true;
                 mail.Priority = MailPriority.High;
 
@@ -45,8 +45,7 @@ namespace TeduShop.Common
                 return true;
             }
             catch (SmtpException smex)
-            {
-               
+            {            
                 return false;
             }
         }

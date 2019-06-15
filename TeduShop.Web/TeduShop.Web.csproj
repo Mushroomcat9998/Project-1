@@ -276,7 +276,6 @@
     <Compile Include="Models\ContactDetailViewModel.cs" />
     <Compile Include="Models\ExternalLoginListViewModel.cs" />
     <Compile Include="Models\FeedbackViewModel.cs" />
-    <Compile Include="Models\FooterViewModel.cs" />
     <Compile Include="Models\HomeViewModel.cs" />
     <Compile Include="Models\LoginViewModel.cs" />
     <Compile Include="Models\OrderDetailViewModel.cs" />
@@ -384,6 +383,7 @@
     <Content Include="Assets\admin\css\skins\skin-yellow.min.css" />
     <Content Include="Assets\admin\css\skins\_all-skins.css" />
     <Content Include="Assets\admin\css\skins\_all-skins.min.css" />
+    <Content Include="Assets\admin\img\admin.jpg" />
     <Content Include="Assets\admin\img\avatar.png" />
     <Content Include="Assets\admin\img\avatar04.png" />
     <Content Include="Assets\admin\img\avatar2.png" />
@@ -4978,6 +4978,7 @@
     <Content Include="Assets\client\images\img-sprite.png" />
     <Content Include="Assets\client\images\label_new.png" />
     <Content Include="Assets\client\images\logo.png" />
+    <Content Include="Assets\client\images\logo1.png" />
     <Content Include="Assets\client\images\pi.jpg" />
     <Content Include="Assets\client\images\pi1.jpg" />
     <Content Include="Assets\client\images\pi2.jpg" />
@@ -5082,7 +5083,6 @@
     <Folder Include="Assets\admin\libs\checklist-model\test\" />
     <Folder Include="Reports\" />
     <Folder Include="UploadedFiles\" />
-    <Folder Include="Views\About\" />
     <Folder Include="Views\Post\" />
   </ItemGroup>
   <ItemGroup>
@@ -5345,7 +5345,9 @@
     <Content Include="ConnectionStrings.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="AppSettings.config" />
+    <Content Include="AppSettings.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Shared\Layouts.cshtml" />

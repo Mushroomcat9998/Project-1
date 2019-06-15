@@ -36,7 +36,6 @@ namespace TeduShop.Web.Api
         }
         [Route("getlistpaging")]
         [HttpGet]
-        //[Authorize(Roles ="ViewUser")]
         public HttpResponseMessage GetListPaging(HttpRequestMessage request, int page, int pageSize, string filter = null)
         {
             return CreateHttpResponse(request, () =>
@@ -62,7 +61,6 @@ namespace TeduShop.Web.Api
 
         [Route("detail/{id}")]
         [HttpGet]
-        //[Authorize(Roles = "ViewUser")]
         public HttpResponseMessage Details(HttpRequestMessage request, string id)
         {
             if (string.IsNullOrEmpty(id))
@@ -82,12 +80,10 @@ namespace TeduShop.Web.Api
                 applicationUserViewModel.Groups = Mapper.Map<IEnumerable<ApplicationGroup>, IEnumerable<ApplicationGroupViewModel>>(listGroup);
                 return request.CreateResponse(HttpStatusCode.OK, applicationUserViewModel);
             }
-
         }
 
         [HttpPost]
         [Route("add")]
-        //[Authorize(Roles = "AddUser")]
         public async Task<HttpResponseMessage> Create(HttpRequestMessage request, ApplicationUserViewModel applicationUserViewModel)
         {
             if (ModelState.IsValid)
@@ -143,7 +139,6 @@ namespace TeduShop.Web.Api
 
         [HttpPut]
         [Route("update")]
-        //[Authorize(Roles = "UpdateUser")]
         public async Task<HttpResponseMessage> Update(HttpRequestMessage request, ApplicationUserViewModel applicationUserViewModel)
         {
             if (ModelState.IsValid)
@@ -192,7 +187,6 @@ namespace TeduShop.Web.Api
 
         [HttpDelete]
         [Route("delete")]
-        //[Authorize(Roles ="DeleteUser")]
         public async Task<HttpResponseMessage> Delete(HttpRequestMessage request, string id)
         {
             var appUser = await _userManager.FindByIdAsync(id);
